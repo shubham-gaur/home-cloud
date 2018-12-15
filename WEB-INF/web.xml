@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Cloud Storage System</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Control_Servlet</servlet-name>
+    <servlet-class>com.servlet.controller.Control_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Control_Servlet</servlet-name>
+    <url-pattern>/Control_Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FileUpload_Servlet</display-name>
+    <servlet-name>FileUpload_Servlet</servlet-name>
+    <servlet-class>com.servlet.FileUpload_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FileUpload_Servlet</servlet-name>
+    <url-pattern>/FileUpload_Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Download_Servlet</display-name>
+    <servlet-name>Download_Servlet</servlet-name>
+    <servlet-class>com.servlet.Download_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Download_Servlet</servlet-name>
+    <url-pattern>/Download_Servlet</url-pattern>
+  </servlet-mapping>
+</web-app>
